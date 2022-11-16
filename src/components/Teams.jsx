@@ -118,7 +118,7 @@ const Teams = () => {
             </div>
         </div>
         {/* TeamList */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-evenly py-6 px-4">
+        <div className="flex flex-col items-center sm:flex-row gap-4 justify-evenly py-6 px-4">
             {/* Team1 */}
             <div className="space-y-4 max-w-xs w-full ">
                 <div className="sm:hidden text-xl font-bold">Team Liquid</div>
