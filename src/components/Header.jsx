@@ -51,7 +51,7 @@ const Header = () => {
         </div>
       </div>
       {/* Burger Nav */}
-      <div className={`fixed ${open ? 'translate-x-[0%]' : 'translate-x-[100%]' } duration-200 transition-transform top-0 bottom-0 right-0 bg-[#211134] z-10 lg:hidden`}>
+      <div className={`fixed ${open ? 'translate-x-[0%]' : 'translate-x-[100%]' } duration-200 transition-transform top-0 bottom-0 right-0 bg-[#211134] z-50 lg:hidden`}>
         <div className="bg-[#211134] px-4 w-[300px] h-[100vh] flex flex-col items-center mt-6 space-y-4">
           <div className="ml-auto">
             <XMarkIcon onClick={() => setOpen(false)} className="w-6 h-6 text-white cursor-pointer" />
