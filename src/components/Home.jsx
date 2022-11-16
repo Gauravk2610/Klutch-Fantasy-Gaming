@@ -5,7 +5,7 @@ import Teams from './Teams'
 
 const Home = () => {
   return (
-    <div className='flex flex-row text-white gap-6 mx-6 py-6'>
+    <div className='flex flex-row text-white justify-center gap-6 mx-6 py-6'>
         {/* News */}
         <News />
         {/* Create Team */}
