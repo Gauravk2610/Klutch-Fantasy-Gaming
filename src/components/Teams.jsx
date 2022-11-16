@@ -1,6 +1,8 @@
 import { data } from "autoprefixer";
 import axios from "axios";
 import React, { useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Teams = () => {
   // axios cancel token
@@ -45,10 +47,10 @@ const Teams = () => {
                 setSelectedPlayers((prev) => [...prev, player]);
                 setCreditScore((prev) => prev - player.credit);
             } else {
-                alert("You don't have enough credits");
+                toast.error("You don't have enough credits");
             }
         } else {
-            alert("You can select only 5 players");
+            toast.error("You can select only 5 players");
         }
 
     }
@@ -65,6 +67,7 @@ const Teams = () => {
 
   return (
     <div className="lg:max-w-3xl w-full h-fit border rounded-lg ">
+    <ToastContainer />
       <div className="text-lg font-semibold px-4 py-3 border-b title">
         Create Team
       </div>
