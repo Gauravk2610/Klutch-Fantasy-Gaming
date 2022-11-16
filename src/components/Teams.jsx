@@ -94,33 +94,34 @@ const Teams = () => {
         {/* teams vs teams */}
         <div className="flex justify-between">
             <div className="flex items-center">
-            <div className=" w-36 h-12 bg-[#FFEE00]" />
-            <div className="w-20 h-20 -ml-4 rounded-full bg-[#21093d] border">
+            <div className=" hidden sm:block w-36 h-12 bg-[#FFEE00]" />
+            <div className="h-16 w-16 sm:w-20 sm:h-20 sm:-ml-4 rounded-full sm:bg-[#21093d] sm:border">
                 <img
                 className="w-full h-full object-contain"
                 src="/assets/Team1.png"
                 alt=""
                 />
             </div>
-            <div className="ml-2 text-lg font-semibold">Team Liquid</div>
+            <div className="ml-2 text-md sm:text-lg font-semibold">Team Liquid</div>
             </div>
-            <img className="w-12 object-contain" src="/assets/VS.png" alt="" />
+            <img className="w-8 sm:w-12 object-contain px-1" src="/assets/VS.png" alt="" />
             <div className="flex items-center">
-            <div className="mr-2 text-lg font-semibold">Sentinels</div>
-            <div className="w-20 h-20 -mr-4 z-10 flex items-center justify-center rounded-full bg-[#21093d] border">
+            <div className="sm:mr-2 text-md sm:text-lg font-semibold">Sentinels</div>
+            <div className="w-16 h-16 sm:w-20 sm:h-20 sm:-mr-4 z-10 flex items-center justify-center rounded-full sm:bg-[#21093d] sm:border">
                 <img
-                className="w-18 h-18 object-contain"
+                className="w-12 h-12 sm:w-18 sm:h-18 object-contain"
                 src="/assets/Team2.png"
                 alt=""
                 />
             </div>
-            <div className=" w-36 h-12 bg-[#CE0037]" />
+            <div className="hidden sm:block w-36 h-12 bg-[#CE0037]" />
             </div>
         </div>
         {/* TeamList */}
-        <div className="flex flex-row gap-4 justify-evenly py-6 px-4">
+        <div className="flex flex-col sm:flex-row gap-4 justify-evenly py-6 px-4">
             {/* Team1 */}
             <div className="space-y-4 max-w-xs w-full ">
+                <div className="sm:hidden text-xl font-bold">Team Liquid</div>
             {teamList?.roster1?.map((item, index) => (
                 <div
                 key={index}
@@ -155,6 +156,7 @@ const Teams = () => {
             </div>
             {/* Team2 */}
             <div className="space-y-4 max-w-xs w-full ">
+                <div className="sm:hidden text-xl font-bold">Sentinels</div>
             {teamList?.roster2?.map((item, index) => (
                 <div
                 key={index}
